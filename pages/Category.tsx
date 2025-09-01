@@ -1,14 +1,14 @@
 import BottomNav from "@/components/BottomNav";
 import React from "react";
 import {
-    FlatList,
-    Image,
-    ImageSourcePropType,
-    ListRenderItem,
-    Text,
-    TextInput,
-    TouchableOpacity,
-    View,
+  FlatList,
+  Image,
+  ImageSourcePropType,
+  ListRenderItem,
+  Text,
+  TextInput,
+  TouchableOpacity,
+  View,
 } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 
@@ -34,6 +34,9 @@ const categories: CategoryItem[] = [
   { id: "12", name: "Essentials", icon: require("../assets/images/essential.png") },
   { id: "13", name: "Education", icon: require("../assets/images/education.png") },
   { id: "14", name: "Agriculture", icon: require("../assets/images/agriculture.png") },
+  { id: "15", name: "Work Overseas", icon: require("../assets/images/work.png") },
+  { id: "16", name: "Other", icon: require("../assets/images/other.png") },
+
 ];
 
 export default function Category() {
@@ -91,7 +94,7 @@ export default function Category() {
   renderItem={renderCategory}
   keyExtractor={(item) => item.id}
   numColumns={3}
-  contentContainerStyle={{ padding: 8, paddingBottom: 80 }}
+  contentContainerStyle={{ padding: 8, paddingBottom: 100 }}
 />
 
       <BottomNav/>
